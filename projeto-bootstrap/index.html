@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Site bootstrap 5</title>
+    <style>
+        body{
+            background-color: whitesmoke;
+        }
+
+        .skills{
+            padding: 100px;
+            background-color: rgb(49, 211, 130);
+        }
+
+
+        .skills-names{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            width: 60%;
+        }
+
+        .skills-names h3{
+            margin: 20px;
+        }
+
+        h1{
+            padding: 30px;
+            color: black;
+        }
+
+        .descricao{
+            margin: auto 200px;
+            text-align: justify;
+            margin-bottom: 100px;
+        }
+
+        .cards-grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(49, 211, 130);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-box" viewBox="0 0 16 16">
+                <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5 8.186 1.113zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
+            </svg>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#sobre-mim">Sobre mim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projetos">Projetos</a>
+              </li>
+            
+          </div>
+        </div>
+      </nav>
+
+    <div class="sobre-mim" id="sobre-mim">
+        <h1>SOBRE MIM: </h1>
+
+        <h3 class="descricao">
+            
+            Olá, meu nome é Ana Júlia, estou cursando Sistemas para Internet na Instituição Federal da Paraíba (IFPB), ainda não tenho experiências do mercado de software, porém uso do meu tempo para desenvolver projetos próprios e, assim, treinar e melhorar as ideias adquiridas em sala de aula, minicursos e cursos online, especialmente no desenvolvimento Front end.
+            <br><br><br>
+            O que mais me atrai na área são as várias formas de resolver um problema e as infinidades de produtos úteis e agradáveis que podem ser gerados apenas com o uso de um computador e do cérebro.
+        
+          </h3>
+
+    </div>  
+
+
+    <div class="skills" id="skills">
+        <h1>SKILLS: </h1>
+            <div class="skills-names">
+            <h3>React</h3>
+            <h3>Redux</h3>
+            <h3>Javascript</h3>
+            <h3>Sass</h3>
+            <h3>CSS</h3>
+            <h3>HTML</h3>
+            <h3>Json</h3>
+            <h3>Java</h3>
+            <h3>Python</h3>
+            <h3>Node</h3>
+            <h3>Github</h3>
+        </div>
+    </div>  
+
+    <div class="projetos" id="projetos">
+    <h1>PROJETOS: </h1>
+    <div class="cards-grid">
+  
+      <div class="card" style="width: 500px; margin: 20px;">
+        <img width="100%" height="220px" src="https://user-images.githubusercontent.com/60307596/81940568-1b2da800-95ce-11ea-85a5-68189354b434.PNG" class="card-img width="500px" height="220px"-top" alt="...">
+        <div class="card-body">
+          <a href="https://github.com/AnaLinsDev/cadastro-reactjs" target="_blank" class="btn btn-primary">Github</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 500px; margin: 20px;">
+        <img width="100%" height="220px" src="https://user-images.githubusercontent.com/60307596/130265320-63646d08-c7a4-490b-aadd-77cec15a7f80.PNG" class="card-img width="500px" height="220px"-top" alt="...">
+        <div class="card-body">
+          <a href="https://github.com/AnaLinsDev/free-to-play-app-reactjs" target="_blank"  class="btn btn-primary">Github</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 500px; margin: 20px;">
+        <img width="100%" height="220px" src="https://user-images.githubusercontent.com/60307596/82382876-27b56480-9a03-11ea-9664-fdd68acbc260.PNG" class="card-img width="500px" height="220px"-top" alt="...">
+        <div class="card-body">
+          <a href="https://github.com/AnaLinsDev/monsters-reactjs2" target="_blank"  class="btn btn-primary">Github</a>
+        </div>
+      </div>
+      
+      <div class="card" style="width: 500px; margin: 20px;">
+        <img width="100%" height="220px" src="https://user-images.githubusercontent.com/60307596/83592476-d2b03d00-a530-11ea-9c2a-13dd20124023.PNG" class="card-img width="500px" height="220px"-top" alt="...">
+        <div class="card-body">
+          <a href="https://github.com/AnaLinsDev/clothing-store-reactjs" target="_blank"  class="btn btn-primary">Github</a>
+        </div>
+      </div>
+      
+      
+      <div class="card" style="width: 500px; margin: 20px;">
+        <img width="100%" height="220px" src="https://user-images.githubusercontent.com/60307596/81362712-ded2e700-90b7-11ea-9814-142b1c9508fd.PNG" class="card-img width="500px" height="220px"-top" alt="...">
+        <div class="card-body">
+          <a href="https://github.com/AnaLinsDev/be-the-hero" target="_blank"  class="btn btn-primary">Github</a>
+        </div>
+      </div>
+
+      
+      <div class="card" style="width: 500px; margin: 20px;">
+        <img width="100%" height="220px" src="https://user-images.githubusercontent.com/60307596/130268378-39976987-1e4c-4cce-992f-f3d57498a323.png" class="card-img width="500px" height="220px"-top" alt="...">
+        <div class="card-body">
+          <a href="https://github.com/AnaLinsDev/rick-and-morty-javascript" target="_blank"  class="btn btn-primary">Github</a>
+        </div>
+      </div>
+
+    </div>
+
+      </div>
+
+    </div>
+      
+
+
+
+
+</body>
+</html>

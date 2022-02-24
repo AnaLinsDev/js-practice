@@ -1,0 +1,66 @@
+body{
+    background: linear-gradient(
+         50deg,
+        rgb(106, 197, 233) 20%,
+        rgb(235, 139, 211) 100%
+      );
+      background-attachment: fixed;
+      font-family: cursive;
+}
+.main{
+  display: grid;
+  grid-template-areas: 
+  "but"
+  "info";
+  justify-content: center;
+}
+.tab {
+  margin-top: 20vh;
+  background-color:transparent;
+  text-align: center;
+  width: 60vw;
+  height: 20vh;
+}
+.tab button {
+  width:20vw ;
+  height: 100%;
+  grid-area: but;
+  background-color:rgba(255, 255, 255, 0.4);
+  float: left;
+  border: 1px solid rgb(36, 36, 36);
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 25px;
+}
+.tab button:hover {
+  background-color: rgb(161, 221, 186);
+}
+.tab button.active {
+  background-color:rgba(32, 2, 202, 0.3);
+}
+.tabcontent {
+  grid-area: info;
+  width: 59.9vw;
+  height: 30vh;
+  display: none;
+  border: 1px solid rgb(36, 36, 36);
+  background-color:rgba(255, 255, 255, 0.4);
+  justify-content: space-between;
+}
+.tabcontent button {
+  background-color:transparent;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  color: rgb(170, 5, 14);
+  align-self: flex-start;
+  cursor: pointer;
+}
+.tabcontent h3{
+  padding-left: 10px;
+}
+.tabcontent p{
+  align-self: center;
+  font-size: 120%;
+}
