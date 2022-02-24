@@ -1,0 +1,35 @@
+body{
+    background: linear-gradient(
+         50deg,
+        rgb(160, 5, 44) 20%,
+        rgb(3, 56, 155) 100%
+      );
+      background-attachment: fixed;
+      font-family: cursive;
+}
+div.main{
+  width: 500px;
+  display: grid;
+  margin: 15vh auto;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+.collapsible {
+  width: 100%;
+  height: 70px;
+  font-size: 30px;
+  color: rgb(16, 2, 49);
+  margin-top: 15px;
+  background-color: rgb(227, 234, 241);
+  border: none;
+  outline: none;
+  transition: 0.2s ease-in-out;
+}
+.content {
+  padding-left: 10px ;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+  background-color: rgb(227, 234, 241);
+}

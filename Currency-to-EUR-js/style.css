@@ -1,0 +1,78 @@
+body{
+    background: linear-gradient(
+        to bottom,
+        rgb(2, 57, 185) 0%,
+        rgb(3, 0, 34) 90%
+      );
+    background-attachment: fixed;
+}
+h1{
+    text-align: center;
+    font-size: 300%;
+    color: rgb(248, 235, 196);
+    font-family: 'Cinzel', serif;
+}
+h2{
+    color: rgb(1, 2, 32);
+    font-family: 'Cinzel', serif;
+}
+div{
+    width: 60%;
+    max-width: 900px;
+    height: 60vh;
+    margin: 0  auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(3, 117, 56);
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgb(243, 242, 177);
+}
+form{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-content: center;
+    margin-left: 5%;
+}
+form select{
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+form input[type= search] {
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: black;
+  }
+
+@media screen and ( max-width: 780px){
+    div{
+        width: 75%;
+        }
+    form{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    }
+@media screen and ( max-width: 660px){
+    h1{
+        font-size: 200%;
+    }
+    div{
+        padding-top: 60px;
+        height: auto;
+        }
+}
+@media screen and ( max-width: 360px){
+    div{
+
+        width: 90vw;
+        } 
+}
